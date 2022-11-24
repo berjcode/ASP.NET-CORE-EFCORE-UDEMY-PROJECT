@@ -1,0 +1,49 @@
+/* _content/BankApp.Web/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-ohq3ftfucf] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-ohq3ftfucf] {
+  color: #0077cc;
+}
+
+.btn-primary[b-ohq3ftfucf] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-ohq3ftfucf], .nav-pills .show > .nav-link[b-ohq3ftfucf] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-ohq3ftfucf] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-ohq3ftfucf] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-ohq3ftfucf] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-ohq3ftfucf] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-ohq3ftfucf] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
