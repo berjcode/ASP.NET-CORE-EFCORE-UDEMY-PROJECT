@@ -1,4 +1,7 @@
 using BankApp.Web.Data.Context;
+using BankApp.Web.Data.Interfaces;
+using BankApp.Web.Data.Repositories;
+using BankApp.Web.Mapping;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileProviders;
 
@@ -12,7 +15,8 @@ builder.Services.AddDbContext<BankContext>(
     });
 builder.Services.AddControllersWithViews();
 
-
+builder.Services.AddScoped<IUserRepository,UserRepository>(); //DI uyguladýk. 
+builder.Services.AddScoped<IUserMapper, UserMapping>(); // usemappingin görünce ýusemapperi caðýr.
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

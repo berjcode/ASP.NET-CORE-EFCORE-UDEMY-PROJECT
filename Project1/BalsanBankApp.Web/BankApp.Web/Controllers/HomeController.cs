@@ -1,4 +1,7 @@
 ﻿using BankApp.Web.Data.Context;
+using BankApp.Web.Data.Interfaces;
+using BankApp.Web.Data.Repositories;
+using BankApp.Web.Mapping;
 using BankApp.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,20 +11,18 @@ namespace BankApp.Web.Controllers
     {
 
         private readonly BankContext _context;
-
-        public HomeController(BankContext context)
+        private readonly IUserRepository _userRepository;
+        private readonly IUserMapper _userMapper;
+        public HomeController(BankContext context,IUserRepository userRepository, IUserMapper userMapper)
         {
             _context = context;
+            _userRepository = userRepository;
+            _userMapper = userMapper;
         }
 
         public IActionResult Index()
         {
-            return View(_context.Users.Select(x=> new UserListModel
-            {
-                Id= x.Id,
-                Name= x.Name,
-                Surname= x.Surname,
-            }).ToList());
+            return View ( _userMapper.MapToIfUserList(_userRepository.GetAll()));
         }
     }
 }
