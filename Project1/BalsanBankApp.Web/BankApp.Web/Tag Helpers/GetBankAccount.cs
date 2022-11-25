@@ -16,7 +16,7 @@ namespace BankApp.Web.Tag_Helpers
 
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {
-            var accountCount = _context.Accounts.Count(x=> x.Id == UserID);
+            var accountCount = _context.Accounts.Count(x=> x.UserID == UserID);
             var html = $"<span class='badge bg-success'> {accountCount} </span>";
             output.Content.SetHtmlContent(html);
         }

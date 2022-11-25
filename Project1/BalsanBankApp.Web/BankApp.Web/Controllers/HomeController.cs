@@ -1,4 +1,5 @@
 ﻿using BankApp.Web.Data.Context;
+using BankApp.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BankApp.Web.Controllers
@@ -15,7 +16,12 @@ namespace BankApp.Web.Controllers
 
         public IActionResult Index()
         {
-            return View(_context.Users.ToList());
+            return View(_context.Users.Select(x=> new UserListModel
+            {
+                Id= x.Id,
+                Name= x.Name,
+                Surname= x.Surname,
+            }).ToList());
         }
     }
 }
