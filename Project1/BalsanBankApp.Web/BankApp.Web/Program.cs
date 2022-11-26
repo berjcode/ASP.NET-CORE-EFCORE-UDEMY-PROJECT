@@ -16,7 +16,9 @@ builder.Services.AddDbContext<BankContext>(
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<IUserRepository,UserRepository>(); //DI uyguladýk. 
+builder.Services.AddScoped<IAccountRepository,AccountRepository>(); 
 builder.Services.AddScoped<IUserMapper, UserMapping>(); // usemappingin görünce ýusemapperi caðýr.
+builder.Services.AddScoped<IAccountMapper,AccountMapping>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

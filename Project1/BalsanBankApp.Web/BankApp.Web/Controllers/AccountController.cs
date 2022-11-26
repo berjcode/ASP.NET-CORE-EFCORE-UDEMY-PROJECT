@@ -9,17 +9,21 @@ namespace BankApp.Web.Controllers
 {
     public class AccountController : Controller
     {
-        private readonly BankContext _context;
+       
         private readonly IUserRepository _userRepository;
+        private readonly IAccountRepository _accountRepository;
         private readonly IUserMapper _userMapper;
+        private readonly IAccountMapper _accountMapper;
 
   
 
-        public AccountController(BankContext context, IUserRepository userRepository, IUserMapper userMapper)
+        public AccountController( IUserRepository userRepository, IUserMapper userMapper, IAccountRepository accountRepository, IAccountMapper accountMapper)
         {
-            _context = context;
+           
             _userRepository = userRepository;
             _userMapper = userMapper;
+            _accountRepository = accountRepository;
+            _accountMapper = accountMapper;
         }
 
         [HttpGet]
@@ -39,19 +43,20 @@ namespace BankApp.Web.Controllers
         [HttpPost]
         public IActionResult Create(AccountCreateModel model)
         {
+           _accountRepository.Create(_accountMapper.Map(model));
 
-
-
-            _context.Accounts.Add(new Data.Entities.Account
-            { 
-                AccountNumber= model.AccountNumber,
-                UserID= model.UserID,
-                Balance= model.Balance,
-
-            });
-            _context.SaveChanges();
+        
             return RedirectToAction("Index","Home");
 
         }
     }
 }
+
+/*
+_context.Accounts.Add(new Data.Entities.Account
+{ 
+    AccountNumber= model.AccountNumber,
+    UserID= model.UserID,
+    Balance= model.Balance,
+
+});*/

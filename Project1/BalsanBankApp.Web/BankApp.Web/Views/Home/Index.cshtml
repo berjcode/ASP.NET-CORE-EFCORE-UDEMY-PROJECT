@@ -21,7 +21,7 @@
         <td> @item.Name</td>
         <td> @item.Surname</td>
             <td> <getBankAccount user-id="@item.Id"> </getBankAccount></td>
-            <td><a asp-action="Create" asp-controller="Account" asp-route-id="@item.Id" >Create New Account </a> </td>
+            <td><a class="btn btn-info" asp-action="Create" asp-controller="Account" asp-route-id="@item.Id" >Yeni Hesap Oluştur </a> </td>
     </tr>
     }
 
