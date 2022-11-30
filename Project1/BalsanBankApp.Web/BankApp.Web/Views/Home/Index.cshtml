@@ -1,5 +1,6 @@
-﻿
-@model List<UserListModel>
+﻿@using BankApp.Web.Data.Entities;
+
+@model List<User>
 
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -21,7 +22,12 @@
         <td> @item.Name</td>
         <td> @item.Surname</td>
             <td> <getBankAccount user-id="@item.Id"> </getBankAccount></td>
-            <td><a class="btn btn-info" asp-action="Create" asp-controller="Account" asp-route-id="@item.Id" >Yeni Hesap Oluştur </a> </td>
+            <td>
+                <a class="btn btn-info" asp-action="Create" asp-controller="Account" asp-route-id="@item.Id" >Yeni Hesap Oluştur </a>
+                <a class="btn btn-dark"   asp-action="GetByUserID" asp-controller="Account" asp-route-id = "@item.Id" > Hesaplara Git</a>
+            
+            </td>
+
     </tr>
     }
 

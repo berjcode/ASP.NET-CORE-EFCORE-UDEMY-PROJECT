@@ -1,4 +1,5 @@
 ﻿using BankApp.Web.Data.Context;
+using BankApp.Web.Data.Entities;
 using BankApp.Web.Data.Interfaces;
 using BankApp.Web.Data.Repositories;
 using BankApp.Web.Mapping;
@@ -8,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace BankApp.Web.Controllers
 {
     public class AccountController : Controller
-    {
+    {/*
        
         private readonly IUserRepository _userRepository;
         private readonly IAccountRepository _accountRepository;
@@ -24,14 +25,29 @@ namespace BankApp.Web.Controllers
             _userMapper = userMapper;
             _accountRepository = accountRepository;
             _accountMapper = accountMapper;
+        }*/
+
+        private readonly IRepository<Account> _accountRepository;
+        private readonly IRepository<User> _userRepository;
+
+        public AccountController (IRepository<Account> accountrepository,IRepository<User> usserRepository)
+        {
+            _accountRepository= accountrepository;
+            _userRepository= usserRepository;
         }
 
         [HttpGet]
         public IActionResult Create(int id)
         {
-            var userInfo = _userMapper.MapToUserList(_userRepository.GetById(id));
-            return View(userInfo);
+            var userInfo = _userRepository.GetByID(id);
+            return View(new UserListModel
+            {
+                Id= id,
+                Name = userInfo.Name,
+                Surname= userInfo.Surname,
+            });
 
+            //_userMapper.MapToUserList(_userRepository.GetById(id));
             /*  var userInfo =   _context.Users.Select(x=> new UserListModel
             {
                 Id= x.Id,
@@ -43,11 +59,39 @@ namespace BankApp.Web.Controllers
         [HttpPost]
         public IActionResult Create(AccountCreateModel model)
         {
-           _accountRepository.Create(_accountMapper.Map(model));
+            _accountRepository.Create(new Account
+            {
+                AccountNumber = model.AccountNumber,
+                Balance = model.Balance,
+                UserID = model.UserID,
+            });
 
         
             return RedirectToAction("Index","Home");
 
+        }
+
+
+        [HttpGet]
+        public IActionResult GetByUserID(int id)
+        {
+            var query = _accountRepository.GetQueryAble();
+           var accountlist=  query.Where(x=> x.UserID == id ).ToList();
+            var user = _userRepository.GetByID(id);
+            ViewBag.FullName = user.Name + "  " + user.Surname;
+            var list = new List<AccountListModel>();
+           foreach (var account in accountlist)
+            {
+                list.Add(new()
+                {
+                    AccountNumber = account.AccountNumber,
+                    UserId= account.UserID,
+                    Balance = account.Balance,
+                   // FullName = user.Name +" "+ user.Surname,
+                    Id= account.Id
+                });
+            }
+           return View(list);
         }
     }
 }
