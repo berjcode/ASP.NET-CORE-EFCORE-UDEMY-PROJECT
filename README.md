@@ -1,10 +1,11 @@
 # ASP.NET CORE EFCORE UDEMY PROJECT
 # Projects 
 
+## TECHNOLOGY
 
-## Asp.Net Core 6 
-## EntityFramework Core 
-## MSSQL
+* Asp.Net Core 6 
+* EntityFramework Core 
+* MSSQL
  
  ### Design Patterns:
       * Generic Repository                                                                                                                                      
