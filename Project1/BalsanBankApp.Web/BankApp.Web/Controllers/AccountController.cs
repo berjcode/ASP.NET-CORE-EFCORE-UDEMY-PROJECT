@@ -2,6 +2,7 @@
 using BankApp.Web.Data.Entities;
 using BankApp.Web.Data.Interfaces;
 using BankApp.Web.Data.Repositories;
+using BankApp.Web.Data.UnitOfWork;
 using BankApp.Web.Mapping;
 using BankApp.Web.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -28,19 +29,25 @@ namespace BankApp.Web.Controllers
             _accountMapper = accountMapper;
         }*/
 
-        private readonly IRepository<Account> _accountRepository;
-        private readonly IRepository<User> _userRepository;
+        //private readonly IRepository<Account> _accountRepository;
+        //private readonly IRepository<User> _userRepository;
 
-        public AccountController (IRepository<Account> accountrepository,IRepository<User> usserRepository)
+        //public AccountController (IRepository<Account> accountrepository,IRepository<User> usserRepository)
+        //{
+        //    _accountRepository= accountrepository;
+        //    _userRepository= usserRepository;
+        //}
+        private readonly IUnitOfWork _unitOfWork;
+
+        public AccountController(IUnitOfWork unitOfWork)
         {
-            _accountRepository= accountrepository;
-            _userRepository= usserRepository;
+            _unitOfWork = unitOfWork;
         }
 
         [HttpGet]
         public IActionResult Create(int id)
         {
-            var userInfo = _userRepository.GetByID(id);
+            var userInfo = _unitOfWork.GetRepository<User>().GetByID(id);
             return View(new UserListModel
             {
                 Id= id,
@@ -60,14 +67,14 @@ namespace BankApp.Web.Controllers
         [HttpPost]
         public IActionResult Create(AccountCreateModel model)
         {
-            _accountRepository.Create(new Account
+            _unitOfWork.GetRepository<Account>().Create(new Account
             {
                 AccountNumber = model.AccountNumber,
                 Balance = model.Balance,
                 UserID = model.UserID,
             });
 
-        
+            _unitOfWork.SaveChanges();
             return RedirectToAction("Index","Home");
 
         }
@@ -76,9 +83,9 @@ namespace BankApp.Web.Controllers
         [HttpGet]
         public IActionResult GetByUserID(int id)
         {
-            var query = _accountRepository.GetQueryAble();
+            var query = _unitOfWork.GetRepository<Account>().GetQueryAble();
            var accountlist=  query.Where(x=> x.UserID == id ).ToList();
-            var user = _userRepository.GetByID(id);
+            var user = _unitOfWork.GetRepository<User>().GetByID(id);
             ViewBag.FullName = user.Name + "  " + user.Surname;
             var list = new List<AccountListModel>();
            foreach (var account in accountlist)
@@ -99,7 +106,7 @@ namespace BankApp.Web.Controllers
         [HttpGet]
         public IActionResult SendMoney(int accountId)
         {
-            var query = _accountRepository.GetQueryAble();
+            var query = _unitOfWork.GetRepository<Account>().GetQueryAble();
             var accounts = query.Where(x=> x.Id != accountId).ToList();
          
 
@@ -125,14 +132,16 @@ namespace BankApp.Web.Controllers
         [HttpPost]
         public IActionResult SendMoney(SendMoneyModel model)
         {
-            var senderAccount = _accountRepository.GetByID(model.SenderId);
+            var senderAccount = _unitOfWork.GetRepository<Account>().GetByID(model.SenderId);
             senderAccount.Balance -= model.Amount;
 
-            _accountRepository.Update(senderAccount);
+            _unitOfWork.GetRepository<Account>().Update(senderAccount);
 
-            var account = _accountRepository.GetByID(model.AccountId);
+            var account = _unitOfWork.GetRepository<Account>().GetByID(model.AccountId);
             account.Balance += model.Amount;
-            _accountRepository.Update(account);
+            _unitOfWork.GetRepository<Account>().Update(account);
+
+            _unitOfWork.SaveChanges();
 
 
             return RedirectToAction("Index","Home");
