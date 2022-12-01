@@ -10,7 +10,8 @@
  ### Design Patterns:
       * Generic Repository                                                                                                                                      
       * MVC                                                                                                                                     
-      * Unit Of Work 
+      * Unit Of Work
+      * Dependency Injection
        
   
                
