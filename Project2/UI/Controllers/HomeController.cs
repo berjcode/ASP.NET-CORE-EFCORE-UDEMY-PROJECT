@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Business.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using UI.Models;
 
@@ -6,27 +7,19 @@ namespace UI.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly IWorkServices _workServices;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IWorkServices workServices)
         {
-            _logger = logger;
+            _workServices = workServices;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var workList = await _workServices.GetAll();
+            return View(workList);
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
     }
 }

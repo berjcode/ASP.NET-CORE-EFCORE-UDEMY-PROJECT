@@ -1,8 +1,32 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model List<WorkListDto>
+@{
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+<div class="container my-2"> 
+
+    <table class="table table-borderless table-hover">
+        <tr>
+            <td> #</td>
+            <td> Not</td>
+            <td> Durum</td>
+
+
+        </tr>
+        @foreach(var work in Model)
+        {
+           <tr>
+            <td class="overflow-hidden"> @work.Id</td>
+            <td>@work.Definition</td>
+            <td> @work.IsCompleted</td>
+
+
+        </tr> 
+        }
+        
+
+    </table>
+
 </div>
