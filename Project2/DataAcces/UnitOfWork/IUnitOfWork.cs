@@ -1,4 +1,5 @@
 ﻿using DataAcces.Interfaces;
+using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ namespace DataAcces.UnitOfWork
     public interface IUnitOfWork
     {
 
-        IRepository<T> GetRepository<T>() where T : class, new();
+        IRepository<T> GetRepository<T>() where T : BaseEntity;
         Task SaveChanges();
     }
 }

@@ -1,6 +1,7 @@
 ﻿using DataAcces.Context;
 using DataAcces.Interfaces;
 using DataAcces.Repositories;
+using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +20,7 @@ namespace DataAcces.UnitOfWork
             _context = context;
         }
 
-        public IRepository<T> GetRepository<T>() where T : class, new()
+        public IRepository<T> GetRepository<T>() where T : BaseEntity
         {
             return new Repository<T>(_context);
         }
