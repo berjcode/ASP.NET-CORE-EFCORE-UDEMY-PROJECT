@@ -96,3 +96,4 @@ C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\Project2\UI\bi
 C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\Project2\UI\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\Project2\UI\bin\Debug\net6.0\package-lock.json
 C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\Project2\UI\bin\Debug\net6.0\package.json
+C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\Project2\UI\bin\Debug\net6.0\AutoMapper.dll
