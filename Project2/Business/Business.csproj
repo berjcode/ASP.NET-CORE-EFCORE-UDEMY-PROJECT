@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj" />
     <ProjectReference Include="..\DataAcces\DataAcces.csproj" />
     <ProjectReference Include="..\Dtos\Dtos.csproj" />
   </ItemGroup>
@@ -17,6 +18,8 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="12.0.0" />
+    <PackageReference Include="FluentValidation" Version="11.4.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.4.0" />
   </ItemGroup>
 
 </Project>

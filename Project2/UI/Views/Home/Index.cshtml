@@ -5,24 +5,33 @@
 }
 
 
+
 <div class="container my-2"> 
+    <div class="text-end my-2 ">
 
-    <table class="table table-borderless table-hover">
+        <a class="btn btn-dark btn-sm" asp-action="Create" asp-controller="Home"> Yeni İş Ekle</a>
+    </div>
+    <table class="table table-hovered table-bordered table-sm">
         <tr>
-            <td> #</td>
-            <td> Not</td>
-            <td> Durum</td>
+            <th> ID</th>
+            <th> İş</th>
+            <th> Durum</th>
+            <th>İşlem</th>
 
 
+            
         </tr>
         @foreach(var work in Model)
         {
            <tr>
-            <td class="overflow-hidden"> @work.Id</td>
+                <td> @work.Id</td>
             <td>@work.Definition</td>
-            <td> @work.IsCompleted</td>
-
-
+             <td> @(work.IsCompleted?"Tamamlandı":"Tamamlanmadı")</td>
+             <td>
+               <a asp-action="Update" asp-controller="Home"  class= "btn btn-warning btn-sm" asp-route-id="@work.Id"> Güncelle </a>
+               <a asp-action="Remove" asp-controller="Home" class="btn btn-danger btn-sm" asp-route-id ="@work.Id" > Sil</a>
+             </td>
+             
         </tr> 
         }
         

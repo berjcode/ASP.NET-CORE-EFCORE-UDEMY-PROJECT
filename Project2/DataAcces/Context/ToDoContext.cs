@@ -17,6 +17,7 @@ namespace DataAcces.Context
         
         }
 
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new WorkConfiguration());

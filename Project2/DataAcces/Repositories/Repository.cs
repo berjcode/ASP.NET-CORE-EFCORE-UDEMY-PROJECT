@@ -1,5 +1,6 @@
 ﻿using DataAcces.Context;
 using DataAcces.Interfaces;
+using Entities.Concrete;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace DataAcces.Repositories
 {
-    public class Repository<T> : IRepository<T> where T : class,new()
+    public class Repository<T> : IRepository<T> where T : BaseEntity
     {
 
         private readonly ToDoContext _context;
@@ -35,7 +36,7 @@ namespace DataAcces.Repositories
             return asNoTracking ? await _context.Set<T>().SingleOrDefaultAsync(filter) : await _context.Set<T>().AsNoTracking().SingleOrDefaultAsync(filter);
         }
 
-        public async Task<T> GetById(object id)
+        public async Task<T> Find(object id)
         {
             return await _context.Set<T>().FindAsync(id);
         }
@@ -47,12 +48,16 @@ namespace DataAcces.Repositories
 
         public void Remove(T entity)
         {
+           
             _context.Set<T>().Remove(entity);
         }
 
-        public void Update(T entity)
+        public void Update(T entity, T unchanged)
         {
-           _context.Set<T>().Update(entity);
+            
+            _context.Entry(unchanged).CurrentValues.SetValues(entity);
+
+           //_context.Set<T>().Update(entity) Propert bazında update için bunu kapattık.
         }
 
 

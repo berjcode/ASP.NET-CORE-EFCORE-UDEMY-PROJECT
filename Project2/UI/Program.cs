@@ -14,6 +14,8 @@ if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
 }
+
+app.UseStatusCodePagesWithReExecute("/Home/NotFound", "?code = 0");
 app.UseStaticFiles();
 
 app.UseStaticFiles(

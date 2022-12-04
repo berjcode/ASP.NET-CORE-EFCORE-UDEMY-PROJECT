@@ -10,9 +10,9 @@ namespace Dtos.WorkDtos
 {
     public class WorkUpdateDto: IDto
     {
-        [Range(1,int.MaxValue,ErrorMessage ="Id zorunlu")]
+       
         public int Id { get; set; }
-        [Required(ErrorMessage = "Zorunlu")]
+       
         public string Definition { get; set; }
         public bool IsCompleted { get; set; }
     }

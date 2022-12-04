@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "+S29uggAYRMePIFid+32VqABrX9dlGuKFthETnENk24HH7PBSfhUzL2bUN+ug7nH1RdaxrtZVuGN0HtAJEqSJA==",
+  "dgSpecHash": "8RmX41PvXhb2lgvmrFTrZSkcs5KN1guZKDxiqfvoZPE1FM8W8kABuZAOyewCcQyeEfeBX9l2SXzucPH1yUeocA==",
   "success": true,
   "projectFilePath": "C:\\Users\\abdbl\\Documents\\GitHub\\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\\Project2\\UI\\UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\abdbl\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\abdbl\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\abdbl\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\abdbl\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512",
+    "C:\\Users\\abdbl\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.4.0\\fluentvalidation.dependencyinjectionextensions.11.4.0.nupkg.sha512",
     "C:\\Users\\abdbl\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\abdbl\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\abdbl\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
