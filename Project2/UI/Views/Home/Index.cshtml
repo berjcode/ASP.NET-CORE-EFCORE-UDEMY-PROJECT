@@ -9,12 +9,12 @@
 <div class="container my-2"> 
     <div class="text-end my-2 ">
 
-        <a class="btn btn-dark btn-sm" asp-action="Create" asp-controller="Home"> Yeni İş Ekle</a>
+        <a class="btn btn-dark btn-sm" asp-action="Create" asp-controller="Home"> Yeni Borç Ekle</a>
     </div>
     <table class="table table-hovered table-bordered table-sm">
         <tr>
-            <th> ID</th>
-            <th> İş</th>
+           @* <th>#</th>*@
+            <th> Kişi Ve Borç</th>
             <th> Durum</th>
             <th>İşlem</th>
 
@@ -24,9 +24,9 @@
         @foreach(var work in Model)
         {
            <tr>
-                <td> @work.Id</td>
+            @*    <td> @work.Id</td>*@
             <td>@work.Definition</td>
-             <td> @(work.IsCompleted?"Tamamlandı":"Tamamlanmadı")</td>
+             <td> @(work.IsCompleted?"Ödedi":"Ödemedi")</td>
              <td>
                <a asp-action="Update" asp-controller="Home"  class= "btn btn-warning btn-sm" asp-route-id="@work.Id"> Güncelle </a>
                <a asp-action="Remove" asp-controller="Home" class="btn btn-danger btn-sm" asp-route-id ="@work.Id" > Sil</a>

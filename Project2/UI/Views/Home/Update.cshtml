@@ -11,14 +11,14 @@
 
         <input type="hidden" asp-for="@Model.Id" />
         <div class="mb-3">
-            <label> İşin Tanımı: </label>
+            <label> Kişi Ve Borç </label>
             <input asp-for="@Model.Definition" class="form-control" />
 
         </div>
 
         <div class="form-check">
             <input class="form-check-input" type="checkbox"  asp-for="@Model.IsCompleted" />
-            <label class="form-check-label" for="IsCompleted">Tamamlandı mı?</label>
+            <label class="form-check-label" for="IsCompleted">Ödedi mi?</label>
         </div>
 
         <div class="mb-3">

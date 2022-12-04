@@ -5,7 +5,7 @@ using Dtos.WorkDtos;
 using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-
+using UI.Extensions;
 
 namespace UI.Controllers
 {
@@ -42,18 +42,21 @@ namespace UI.Controllers
         {
 
            var response = await _workServices.Create(dto);
-           if(response.ResponseType == ResponseType.ValidationError)
-            {
-                foreach (var error in response.ValidationErrors)
-                {
-                    ModelState.AddModelError(error.PropertyName, error.ErrorMessage);
-                }
-                return View(dto);
-              
-            }else
-            {
-                return RedirectToAction("Index");
-            }
+            return this.ResponseRedirectToAction(response, "Index");
+
+            //Controller Extensionsdan önce 
+            //if(response.ResponseType == ResponseType.ValidationError)
+            // {
+            //     foreach (var error in response.ValidationErrors)
+            //     {
+            //         ModelState.AddModelError(error.PropertyName, error.ErrorMessage);
+            //     }
+            //     return View(dto);
+
+            // }else
+            // {
+            //     return RedirectToAction("Index");
+            // }
 
         }
 
@@ -61,12 +64,16 @@ namespace UI.Controllers
         {
             //ResponseObject Sonrası 
             var response = await _workServices.GetById<WorkUpdateDto>(id);
-            if (response.ResponseType == ResponseType.NotFound)
-            {
-                return NotFound();
-            }
 
-            return View(response.Data);
+            return this.ResponseView(response);
+
+            //Controller extensiondan önce 
+            //if (response.ResponseType == ResponseType.NotFound)
+            //{
+            //    return NotFound();
+            //}
+
+            //return View(response.Data);
 
             //AutoMapperSonrası
 
@@ -86,16 +93,20 @@ namespace UI.Controllers
         {
 
             var response = await _workServices.Update(dto);
-            if (response.ResponseType == ResponseType.ValidationError)
-            {
-                foreach (var error in response.ValidationErrors)
-                {
-                    ModelState.AddModelError(error.PropertyName,error.ErrorMessage);
-                }
-                return View(dto);
-            }
 
-            return RedirectToAction("Index");
+            return this.ResponseRedirectToAction(response, "Index");
+
+            //Controllerextensiondan önce 
+            //if (response.ResponseType == ResponseType.ValidationError)
+            //{
+            //    foreach (var error in response.ValidationErrors)
+            //    {
+            //        ModelState.AddModelError(error.PropertyName,error.ErrorMessage);
+            //    }
+            //    return View(dto);
+            //}
+
+            //return RedirectToAction("Index");
 
         }
 
@@ -103,9 +114,13 @@ namespace UI.Controllers
         {
           var response =  await _workServices.Remove(id);
 
-            if(response.ResponseType == ResponseType.NotFound)
-                return NotFound();
-            return RedirectToAction("Index");
+            return this.ResponseRedirectToAction(response, "Index");
+
+            //ControllerExtensiondan önce
+
+            //if(response.ResponseType == ResponseType.NotFound)
+            //    return NotFound();
+            //return RedirectToAction("Index");
         }
 
 
