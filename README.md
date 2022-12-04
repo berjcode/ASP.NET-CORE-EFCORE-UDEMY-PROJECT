@@ -20,6 +20,7 @@
 * Auto Mapper 12.0
 * Fluent Validation 11.4.0
 * Fluent Validation DependencyInjectionExtensions 11.4.0
+* Asp.net Core Identity 2.2
 
  
  ### Design Patterns:
