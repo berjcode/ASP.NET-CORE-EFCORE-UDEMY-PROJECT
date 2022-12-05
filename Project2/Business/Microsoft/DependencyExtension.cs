@@ -29,9 +29,7 @@ namespace Business.Microsoft
                 opt.LogTo(Console.WriteLine, LogLevel.Information); 
             });
             //Custom Cookie Based Auth 
-           Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-    .AddCookie();
-
+    
 
             //AutoMapper
             var configuration = new MapperConfiguration(opt =>

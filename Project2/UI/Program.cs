@@ -19,7 +19,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 
 builder.Services.AddDependencies();
 builder.Services.AddControllersWithViews(); //MVC
-
+       
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

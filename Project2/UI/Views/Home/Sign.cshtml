@@ -1,0 +1,22 @@
+﻿@model SignLnModel
+<html>
+
+    <head>
+        <title>Login</title>
+    </head>
+
+    <body>
+
+    <form method="post" asp-action=" SignLn" >
+        <input  asp-for="@Model.UserName"/>
+        <input asp-for="@Model.Password" />
+      
+        <input type="checkbox" asp-for="@Model.Remember" />   <label> Beni Hatırla</label>
+
+        <div>
+            <button type="submit"> Kaydet</button>
+        </div>
+
+        </form>
+    </body>
+</html>

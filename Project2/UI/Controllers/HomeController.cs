@@ -2,10 +2,15 @@
 using Business.Interfaces;
 using Business.Mappings;
 using Dtos.WorkDtos;
+using Entities.Concrete;
 using FluentValidation;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Security.Claims;
 using UI.Extensions;
+using UI.Models;
 
 namespace UI.Controllers
 {
@@ -20,6 +25,9 @@ namespace UI.Controllers
             _workServices = workServices;
 
         }
+
+
+        
 
         public async Task<IActionResult> Index()
         {
