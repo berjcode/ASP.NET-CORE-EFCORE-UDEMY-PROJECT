@@ -27,7 +27,7 @@ namespace UI.Extensions
 
         public static IActionResult ResponseView<T>(this Controller controller,IResponse<T> response)
         {
-            if(response.ResponseType!= ResponseType.NotFound)
+            if(response.ResponseType== ResponseType.NotFound)
             {
                 return controller.NotFound();
             }

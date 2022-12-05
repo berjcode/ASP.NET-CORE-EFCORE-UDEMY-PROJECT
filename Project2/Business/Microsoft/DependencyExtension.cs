@@ -28,6 +28,9 @@ namespace Business.Microsoft
                 opt.UseSqlServer("server=(localdb)\\ProjectModels;database=ToDoApp;integrated security =true;");
                 opt.LogTo(Console.WriteLine, LogLevel.Information); 
             });
+            //Custom Cookie Based Auth 
+           Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie();
 
 
             //AutoMapper
@@ -44,7 +47,7 @@ namespace Business.Microsoft
             services.AddScoped<IWorkServices, WorkService>();
 
             services.AddTransient<IValidator<WorkCreateDto>, WorkCreateDtoValidator>();
-            services.AddTransient<IValidator<WorkUpdateDto>,WorkUpdateDtoValidator>();
+            services.AddTransient<IValidator<WorkUpdateDto>,WorkUpdateDtoValidator>(); 
 
 
          

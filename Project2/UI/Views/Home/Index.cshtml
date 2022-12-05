@@ -13,7 +13,7 @@
     </div>
     <table class="table table-hovered table-bordered table-sm">
         <tr>
-           @* <th>#</th>*@
+            <th>#</th>
             <th> Kişi Ve Borç</th>
             <th> Durum</th>
             <th>İşlem</th>
@@ -24,7 +24,7 @@
         @foreach(var work in Model)
         {
            <tr>
-            @*    <td> @work.Id</td>*@
+                <td> @work.Id</td>
             <td>@work.Definition</td>
              <td> @(work.IsCompleted?"Ödedi":"Ödemedi")</td>
              <td>
