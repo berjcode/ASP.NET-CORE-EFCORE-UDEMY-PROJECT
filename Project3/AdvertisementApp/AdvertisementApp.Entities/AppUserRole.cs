@@ -14,6 +14,6 @@ namespace AdvertisementApp.Entities
         
 
         public int AppRoleId { get; set; }
-        public AppRole AppRoleRole { get; set; } 
+        public AppRole AppRole { get; set; } 
     }
 }

@@ -25,6 +25,6 @@ namespace AdvertisementApp.Entities
 
         public DateTime? EndDate { get; set; }
         public int WorkExperience { get; set; }
-        public string CvpPath { get; set; } 
+        public string CvPath { get; set; } 
     }
 }

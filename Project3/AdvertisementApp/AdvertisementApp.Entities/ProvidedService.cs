@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AdvertisementApp.Entities
 {
-    internal class ProvidedService: BaseEntity
+    public class ProvidedService: BaseEntity
     {
         public string  Title { get; set; }
         public string ImagePath { get; set; }
