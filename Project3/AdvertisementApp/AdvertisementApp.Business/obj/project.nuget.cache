@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "hGBT+I8ScgTVEYAn3ugT7kcPHzajeiDu/0p5Q7MPJZJIEFoFpmfBJEo/jSJ6rfuGLyBSLF2VP7wpTmiAUHslmQ==",
+  "dgSpecHash": "KpI7X0VcxQDEOMVkItQbgJN+w9OCShBZtT1JlNcnKsBeyIaY08xlTdaBkGs+jbQV3TIsu8CBON7Raf/Pe8VhNw==",
   "success": true,
   "projectFilePath": "C:\\Users\\abdbl\\Documents\\GitHub\\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\\Project3\\AdvertisementApp\\AdvertisementApp.Business\\AdvertisementApp.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\abdbl\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\abdbl\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\abdbl\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\abdbl\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512",
+    "C:\\Users\\abdbl\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.4.0\\fluentvalidation.dependencyinjectionextensions.11.4.0.nupkg.sha512",
     "C:\\Users\\abdbl\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\abdbl\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\abdbl\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",

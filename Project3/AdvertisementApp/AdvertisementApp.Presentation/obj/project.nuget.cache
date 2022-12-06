@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "cI1A7HwzTjP3Ev3o1aHgRLqYYC9o9eYiXPYTgwdw+ZKrfJ3zIj5nWxaYf71BegBBcIo2Qom3PakzmVSRaicr1Q==",
+  "dgSpecHash": "Or3pJAdafeZU8qNXRHMrzp49uFoVoBpr9cleqZ/LhMbYilyGfrOxmiOjrB6MyGI+T+cYFJCmwNPbBbf7BsbLkA==",
   "success": true,
   "projectFilePath": "C:\\Users\\abdbl\\Documents\\GitHub\\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\\Project3\\AdvertisementApp\\AdvertisementApp.Presentation\\AdvertisementApp.Presentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\abdbl\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\abdbl\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\abdbl\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\abdbl\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512",
+    "C:\\Users\\abdbl\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.4.0\\fluentvalidation.dependencyinjectionextensions.11.4.0.nupkg.sha512",
     "C:\\Users\\abdbl\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\abdbl\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\abdbl\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
