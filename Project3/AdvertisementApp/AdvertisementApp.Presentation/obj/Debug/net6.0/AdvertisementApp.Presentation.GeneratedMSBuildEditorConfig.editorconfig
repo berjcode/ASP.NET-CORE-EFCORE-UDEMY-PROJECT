@@ -16,12 +16,12 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\Project3\AdvertisementApp\AdvertisementApp.Presentation
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/abdbl/Documents/GitHub/ASP.NET-CORE-EFCORE-UDEMY-PROJECT/Project3/AdvertisementApp/AdvertisementApp.Presentation/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/Users/abdbl/Documents/GitHub/ASP.NET-CORE-EFCORE-UDEMY-PROJECT/Project3/AdvertisementApp/AdvertisementApp.Presentation/Views/Home/Advertisement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZHZlcnRpc2VtZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/abdbl/Documents/GitHub/ASP.NET-CORE-EFCORE-UDEMY-PROJECT/Project3/AdvertisementApp/AdvertisementApp.Presentation/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/abdbl/Documents/GitHub/ASP.NET-CORE-EFCORE-UDEMY-PROJECT/Project3/AdvertisementApp/AdvertisementApp.Presentation/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/abdbl/Documents/GitHub/ASP.NET-CORE-EFCORE-UDEMY-PROJECT/Project3/AdvertisementApp/AdvertisementApp.Presentation/Views/Shared/Error.cshtml]

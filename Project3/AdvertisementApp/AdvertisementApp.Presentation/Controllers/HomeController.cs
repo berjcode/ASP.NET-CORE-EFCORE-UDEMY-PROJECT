@@ -1,4 +1,6 @@
-﻿using AdvertisementApp.Presentation.Models;
+﻿using AdvertisementApp.Business.Interfaces;
+using AdvertisementApp.Presentation.Extensions;
+using AdvertisementApp.Presentation.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -6,27 +8,28 @@ namespace AdvertisementApp.Presentation.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly IProvidedServiceService _providedServiceService;
+        private readonly IAdvertisementService _advertisementService;
+
+        public HomeController(IProvidedServiceService providedServiceService, IAdvertisementService advertisementService)
         {
-            _logger = logger;
+            _providedServiceService = providedServiceService;
+            _advertisementService = advertisementService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var response = await _providedServiceService.GetAllAsync();
+            return this.ResponseView(response);
         }
 
-        public IActionResult Privacy()
+        public async Task<IActionResult> Advertisement()
         {
-            return View();
+           var response = await _advertisementService.GetActiveAsync();
+            return this.ResponseView(response);
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+       
     }
 }

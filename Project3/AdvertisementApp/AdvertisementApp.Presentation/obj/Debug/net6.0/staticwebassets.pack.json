@@ -5,16 +5,60 @@
       "PackagePath": "staticwebassets\\AdvertisementApp.Presentation.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\abdbl\\Documents\\GitHub\\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\\Project3\\AdvertisementApp\\AdvertisementApp.Presentation\\wwwroot\\css\\site.css",
-      "PackagePath": "staticwebassets\\css\\site.css"
+      "Id": "C:\\Users\\abdbl\\Documents\\GitHub\\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\\Project3\\AdvertisementApp\\AdvertisementApp.Presentation\\wwwroot\\Themes\\startbootstrap-one-page-wonder-gh-pages\\assets\\favicon.ico",
+      "PackagePath": "staticwebassets\\Themes\\startbootstrap-one-page-wonder-gh-pages\\assets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\abdbl\\Documents\\GitHub\\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\\Project3\\AdvertisementApp\\AdvertisementApp.Presentation\\wwwroot\\Themes\\startbootstrap-one-page-wonder-gh-pages\\assets\\img\\01.jpg",
+      "PackagePath": "staticwebassets\\Themes\\startbootstrap-one-page-wonder-gh-pages\\assets\\img\\01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\abdbl\\Documents\\GitHub\\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\\Project3\\AdvertisementApp\\AdvertisementApp.Presentation\\wwwroot\\Themes\\startbootstrap-one-page-wonder-gh-pages\\assets\\img\\02.jpg",
+      "PackagePath": "staticwebassets\\Themes\\startbootstrap-one-page-wonder-gh-pages\\assets\\img\\02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\abdbl\\Documents\\GitHub\\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\\Project3\\AdvertisementApp\\AdvertisementApp.Presentation\\wwwroot\\Themes\\startbootstrap-one-page-wonder-gh-pages\\assets\\img\\03.jpg",
+      "PackagePath": "staticwebassets\\Themes\\startbootstrap-one-page-wonder-gh-pages\\assets\\img\\03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\abdbl\\Documents\\GitHub\\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\\Project3\\AdvertisementApp\\AdvertisementApp.Presentation\\wwwroot\\Themes\\startbootstrap-one-page-wonder-gh-pages\\css\\styles.css",
+      "PackagePath": "staticwebassets\\Themes\\startbootstrap-one-page-wonder-gh-pages\\css\\styles.css"
+    },
+    {
+      "Id": "C:\\Users\\abdbl\\Documents\\GitHub\\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\\Project3\\AdvertisementApp\\AdvertisementApp.Presentation\\wwwroot\\Themes\\startbootstrap-one-page-wonder-gh-pages\\index.html",
+      "PackagePath": "staticwebassets\\Themes\\startbootstrap-one-page-wonder-gh-pages\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\abdbl\\Documents\\GitHub\\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\\Project3\\AdvertisementApp\\AdvertisementApp.Presentation\\wwwroot\\Themes\\startbootstrap-one-page-wonder-gh-pages\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\Themes\\startbootstrap-one-page-wonder-gh-pages\\js\\scripts.js"
+    },
+    {
+      "Id": "C:\\Users\\abdbl\\Documents\\GitHub\\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\\Project3\\AdvertisementApp\\AdvertisementApp.Presentation\\wwwroot\\assets\\favicon.ico",
+      "PackagePath": "staticwebassets\\assets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\abdbl\\Documents\\GitHub\\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\\Project3\\AdvertisementApp\\AdvertisementApp.Presentation\\wwwroot\\assets\\img\\01.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\abdbl\\Documents\\GitHub\\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\\Project3\\AdvertisementApp\\AdvertisementApp.Presentation\\wwwroot\\assets\\img\\02.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\abdbl\\Documents\\GitHub\\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\\Project3\\AdvertisementApp\\AdvertisementApp.Presentation\\wwwroot\\assets\\img\\03.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\abdbl\\Documents\\GitHub\\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\\Project3\\AdvertisementApp\\AdvertisementApp.Presentation\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
     },
     {
       "Id": "C:\\Users\\abdbl\\Documents\\GitHub\\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\\Project3\\AdvertisementApp\\AdvertisementApp.Presentation\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\abdbl\\Documents\\GitHub\\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\\Project3\\AdvertisementApp\\AdvertisementApp.Presentation\\wwwroot\\js\\site.js",
-      "PackagePath": "staticwebassets\\js\\site.js"
+      "Id": "C:\\Users\\abdbl\\Documents\\GitHub\\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\\Project3\\AdvertisementApp\\AdvertisementApp.Presentation\\wwwroot\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\js\\scripts.js"
     },
     {
       "Id": "C:\\Users\\abdbl\\Documents\\GitHub\\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\\Project3\\AdvertisementApp\\AdvertisementApp.Presentation\\wwwroot\\lib\\bootstrap\\LICENSE",

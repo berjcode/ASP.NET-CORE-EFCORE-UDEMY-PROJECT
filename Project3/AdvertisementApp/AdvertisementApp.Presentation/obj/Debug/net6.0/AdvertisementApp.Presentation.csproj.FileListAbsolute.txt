@@ -93,3 +93,8 @@ C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\Project3\Adver
 C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\Project3\AdvertisementApp\AdvertisementApp.Presentation\bin\Debug\net6.0\AdvertisementApp.Common.pdb
 C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\Project3\AdvertisementApp\AdvertisementApp.Presentation\bin\Debug\net6.0\AdvertisementApp.DataAccess.pdb
 C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\Project3\AdvertisementApp\AdvertisementApp.Presentation\bin\Debug\net6.0\AdvertisementApp.Entities.pdb
+C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\Project3\AdvertisementApp\AdvertisementApp.Presentation\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\Project3\AdvertisementApp\AdvertisementApp.Presentation\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\Project3\AdvertisementApp\AdvertisementApp.Presentation\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\Project3\AdvertisementApp\AdvertisementApp.Presentation\bin\Debug\net6.0\AdvertisementApp.Dtos.dll
+C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\Project3\AdvertisementApp\AdvertisementApp.Presentation\bin\Debug\net6.0\AdvertisementApp.Dtos.pdb

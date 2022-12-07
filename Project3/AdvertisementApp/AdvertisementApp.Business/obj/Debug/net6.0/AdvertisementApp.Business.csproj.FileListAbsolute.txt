@@ -17,3 +17,5 @@ C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\Project3\Adver
 C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\Project3\AdvertisementApp\AdvertisementApp.Business\obj\Debug\net6.0\refint\AdvertisementApp.Business.dll
 C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\Project3\AdvertisementApp\AdvertisementApp.Business\obj\Debug\net6.0\AdvertisementApp.Business.pdb
 C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\Project3\AdvertisementApp\AdvertisementApp.Business\obj\Debug\net6.0\ref\AdvertisementApp.Business.dll
+C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\Project3\AdvertisementApp\AdvertisementApp.Business\bin\Debug\net6.0\AdvertisementApp.Dtos.dll
+C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\Project3\AdvertisementApp\AdvertisementApp.Business\bin\Debug\net6.0\AdvertisementApp.Dtos.pdb

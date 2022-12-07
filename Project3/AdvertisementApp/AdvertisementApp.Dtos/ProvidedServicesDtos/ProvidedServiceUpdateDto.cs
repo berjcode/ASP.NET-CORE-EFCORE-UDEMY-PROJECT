@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AdvertisementApp.Dtos.ProvidedServicesDtos
+namespace AdvertisementApp.Dtos
 {
-    public class ProvidedServiceUpdateDto: IDto
+    public class ProvidedServiceUpdateDto: IUpdateDto
     {
         public int Id { get; set; }
 
