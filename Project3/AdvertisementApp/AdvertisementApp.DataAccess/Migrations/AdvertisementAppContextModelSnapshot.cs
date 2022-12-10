@@ -131,6 +131,18 @@ namespace AdvertisementApp.DataAccess.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("AppRoles");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Definition = "Admin"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Definition = "Member"
+                        });
                 });
 
             modelBuilder.Entity("AdvertisementApp.Entities.AppUser", b =>

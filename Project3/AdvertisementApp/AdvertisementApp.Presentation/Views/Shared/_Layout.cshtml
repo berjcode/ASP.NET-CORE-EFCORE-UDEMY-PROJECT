@@ -17,29 +17,69 @@
     <link href="~/css/styles.css" rel="stylesheet" />
 </head>
 <body id="page-top">
+   
+<div class="container-fluid">
+        <div class="row" style="height:200px;  width:auto">
+ 
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <nav class=" @( User.IsInRole("Admin")?" navbar navbar-expand-lg navbar-dark bg-danger ": " navbar navbar-expand-lg navbar-dark bg-info")">
         <div class="container px-5">
-            <a class="navbar-brand" href="#page-top">İşini Kap</a>
+            <a class="navbar-brand" href="/Home/Index">İşini Kap</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#!">Sign Up</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#!">Log In</a></li>
-                    <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Advertisement">İş İlanları</a></li>
+                    @{
+                        if(User.Identity.IsAuthenticated)
+                        {
+                            @if(User.IsInRole("Member"))
+                            {
+                                <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Advertisement">İş İlanları</a></li>
+                                <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Advertisement">Başvurularım</a></li>
+                            }
+
+                          
+                          
+
+                            @if(User.IsInRole("Admin"))
+                            {
+                                <li class="nav-item"><a class="nav-link" asp-controller="AdvertisementApp" asp-action="List">İlan Başvuruları </a></li>
+                            }
+                            <li class="nav-item"><a class="nav-link" asp-controller="Account" asp-action="LogOut">Çıkış Yap</a></li>
+                        }else
+                        {
+                            <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Advertisement">İş İlanları</a></li>
+                            <li class="nav-item"><a class="nav-link" asp-controller="Account" asp-action="SignUp">Kayıt Ol</a></li>
+                              <li class="nav-item"><a class="nav-link" asp-controller="Account" asp-action="SignIn">Giriş Yap</a></li>
+                    
+                          
+                        }
+                    }
+                 
+                   
+                    
                 </ul>
             </div>
         </div>
     </nav>
-    @RenderBody()
-   <!-- Footer-->
-    <footer class="py-5 bg-black">
-        <div class="container px-5"><p class="m-0 text-center text-white small">Copyright &copy; İşini Kap</p></div>
-    </footer>
+
+        </div>
+        <div class="row" style="height:600px;  width:auto">
+
+            @RenderBody()
+
+         </div>
+       @* <div class="row " style="height:200px; width:auto">
+            <footer class="bg-dark">
+            <p style="text-align:center; color:red;">Abdullah Balıkçı</p>
+            
+        </footer>
+        </div>*@
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
    
     <script src="~/js/scripts.js"></script>
+    @RenderSection("script",false);
+    </div>
 </body>
 </html>

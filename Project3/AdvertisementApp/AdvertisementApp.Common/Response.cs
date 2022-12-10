@@ -29,5 +29,6 @@ namespace AdvertisementApp.Common
         Success,
         ValidationError,
         NotFound
+       
     }
 }

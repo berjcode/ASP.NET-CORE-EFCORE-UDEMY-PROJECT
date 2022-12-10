@@ -1,6 +1,7 @@
 ﻿using AdvertisementApp.Business.Interfaces;
 using AdvertisementApp.Business.Mappings.AutoMapper;
 using AdvertisementApp.Business.Services;
+using AdvertisementApp.Business.ValidationRules.AdvertisementAppUserRules;
 using AdvertisementApp.Business.ValidationRules.AdvertisementServiceRules;
 using AdvertisementApp.Business.ValidationRules.AppUserRules;
 using AdvertisementApp.Business.ValidationRules.GenderRules;
@@ -33,39 +34,45 @@ namespace AdvertisementApp.Business.DependencyResolvers.Microsoft
             });
 
 
-            //Mapping
-           var mapperConfigurations =  new MapperConfiguration(opt =>
-           {
-               // opt.AddProfile();
-               opt.AddProfile(new ProvidedServiceProfile());
-               opt.AddProfile(new AdvertisementProfile());
-               opt.AddProfile(new AppUserProfile());
-               opt.AddProfile(new GenderProfile());
+            ////Mapping
+            //var mapperConfigurations = new MapperConfiguration(opt =>
+            //{
+            //    // opt.AddProfile();
+            //    opt.AddProfile(new ProvidedServiceProfile());
+            //    opt.AddProfile(new AdvertisementProfile());
+            //    opt.AddProfile(new AppUserProfile());
+            //    opt.AddProfile(new GenderProfile());
 
 
-            });
-           
-            var mapper= mapperConfigurations.CreateMapper();
-            services.AddSingleton(mapper);
+            //});
 
+            //var mapper = mapperConfigurations.CreateMapper();
+            //services.AddSingleton(mapper);
             //Unit Of Work
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             //Provided
             services.AddTransient<IValidator<ProvidedServiceCreateDto>, ProvidedServiceCreateDtoValidator>();
             services.AddTransient<IValidator<ProvidedServiceUpdateDto>, ProvidedServiceUpdateValidator>();
             //Advertisement
-            services.AddTransient<IValidator<AdvertisementCreateDto> , AdvertisementCreateDtoValidator > ();
-            services.AddTransient<IValidator<AdvertisementUpdateDto>, AdvertisementUpdateDtoValidator > ();
+            services.AddTransient<IValidator<AdvertisementCreateDto> , AdvertisementCreateDtoValidator >();
+            services.AddTransient<IValidator<AdvertisementUpdateDto>, AdvertisementUpdateDtoValidator >();
             //AppUser
             services.AddTransient<IValidator<AppUserCreateDto>, AppUserCreateDtoValidator>();
             services.AddTransient<IValidator<AppUserUpdateDto>, AppUserUpdateDtoValidator>();
+            services.AddTransient<IValidator<AppUserLoginDto>, AppUserLoginDtoValidator>();
             //Gender
             services.AddTransient<IValidator<GenderCreateDto>, GenderCreateDtoValidator>();
             services.AddTransient<IValidator<GenderUpdateDto>, GenderUpdateDtoValidator>();
+            //AdvertisementAppuser
+            services.AddTransient<IValidator<AdvertisementAppUserCreateDto>, AdvertisementAppUserCreateDtoValidator>();
             //Services:  Class-Interfaces
             services.AddScoped<IProvidedServiceService, ProvidedServiceService>();
             services.AddScoped<IAdvertisementService, AdvertisementService>();
             services.AddScoped<IAppUserService, AppUserService>();
+            services.AddScoped<IGenderService, GenderService>();
+            services.AddScoped<IAdvertisementAppUserService, AdvertisementAppUserService>();
         }
+
+       
     }
 }
