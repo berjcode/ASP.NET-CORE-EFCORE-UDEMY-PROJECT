@@ -11,36 +11,42 @@
         {
             <div class="accordion-item">
                 <h2 class="accordion-header" id="heading-@Model[i].Id">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-@Model[i].Id" aria-expanded="@(i==0)" aria-controls="collapse-@Model[i].Id">
+                    <button class="accordion-button text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-@Model[i].Id" aria-expanded="@(i==0)" aria-controls="collapse-@Model[i].Id">
                         @Model[i].Title
                     </button>
                 </h2>
                 <div id="collapse-@Model[i].Id" class="accordion-collapse collapse @(i==0?"show":"")" aria-labelledby="heading-@Model[i].Id" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">@Model[i].Title</h5>
+
+                        @Html.Raw(Model[i].Description)
+
+
+
+                        <hr>
+                        <div>
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <a asp-controller="AdvertisementApp" asp-action="Send" asp-route-advertisementId="@Model[i].Id" class="card-link">Başvuru Linki</a>
+                            }
+                            else
+                            {
+                                <div class="alert  alert-light text-center lead">
+                                    Başvuru yapabilmeniz için giriş yapmanız  gerekmektedir. <a asp-controller="Account" asp-action="SignIn"> Giriş Yap </a>
+                                </div>
+                            }
+                            <hr>
+
+                            <p class="card-text"> Oluşturulma Tarihi: @Model[i].CreatedDate.ToString("dddd, dd MMMM yyyy")</p>
+                       
+
                                 
-
-                                <p class="card-text">@Model[i].Description</p>
-
-                                <div>@if(User.Identity.IsAuthenticated)
-                                    {
-                                        <a  asp-controller="AdvertisementApp" asp-action="Send" asp-route-advertisementId="@Model[i].Id"  class="card-link">Başvuru Linki</a>  
-                                    }else
-                                    {
-                                       <div class="alert  alert-light text-center lead">
-                                       Başvuru yapabilmeniz için giriş yapmanız  gerekmektedir. <a asp-controller="Account" asp-action="SignIn"> Giriş Yap </a>    
-                                       </div>
-                                    }
                                 </div>
                                 <hr>
-                                <p class="card-text"> Oluşturulma Tarihi: @Model[i].CreatedDate</p>
-                                <hr>
+                               
+                       
                             </div>
                         </div>
-                    </div>
-                </div>
+                 
             </div>
         }
       

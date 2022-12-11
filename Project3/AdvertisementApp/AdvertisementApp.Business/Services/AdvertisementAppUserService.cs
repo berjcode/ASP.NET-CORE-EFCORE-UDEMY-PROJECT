@@ -4,6 +4,7 @@ using AdvertisementApp.Common;
 using AdvertisementApp.Common.Enums;
 using AdvertisementApp.DataAccess.Interfaces;
 using AdvertisementApp.Dtos;
+using AdvertisementApp.Dtos.Interfaces;
 using AdvertisementApp.Entities;
 using AutoMapper;
 using FluentValidation;
@@ -80,5 +81,14 @@ namespace AdvertisementApp.Business.Services
             await _uow.SaveChangesAsync();
         }
 
+        public async Task<IResponse> RemoveAsync(int id)
+        {
+            var data = await _uow.GetRepository<AdvertisementAppUser>().FindAsync(id);
+            if (data == null)
+                return new Response<IDto>(ResponseType.NotFound, $"{id} ye sahip data bulunamadı.");
+            _uow.GetRepository<AdvertisementAppUser>().Remove(data);
+            await _uow.SaveChangesAsync();
+            return new Response(ResponseType.Success);
+        }
     }
 }

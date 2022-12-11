@@ -1,4 +1,5 @@
 ﻿using AdvertisementApp.Business.Interfaces;
+using AdvertisementApp.Business.Services;
 using AdvertisementApp.Common.Enums;
 using AdvertisementApp.Dtos;
 using AdvertisementApp.Presentation.Extensions;
@@ -65,6 +66,8 @@ namespace AdvertisementApp.Presentation.Controllers
         public async Task<IActionResult> Send(AdvertisementAppUserCreateModel model)
         {
             AdvertisementAppUserCreateDto dto = new();
+
+
             if(model.CvFile != null)
             {
                 var fileName = Guid.NewGuid().ToString();
@@ -131,7 +134,30 @@ namespace AdvertisementApp.Presentation.Controllers
 
             await _advertisementAppUserService.SetStatus(advertisementAppUserId, type);
 
-            return View();
+            return RedirectToAction("List");
+        }
+
+        [Authorize(Roles ="Admin")]
+       public async Task<IActionResult> ApprovedList()
+        {
+            var list = await _advertisementAppUserService.GetList(AdvertisementAppUserStatusType.Mulakat);
+            return View(list);
+        }
+
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> RejectedList()
+        {
+            var list = await _advertisementAppUserService.GetList(AdvertisementAppUserStatusType.Olumsuz);
+            return View(list);
+        }
+
+
+
+        public async Task<IActionResult> Remove(int id)
+        {
+
+            var response = await _advertisementAppUserService.RemoveAsync(id);
+            return this.ResponseRedirectAction(response, "List");
         }
     }
 

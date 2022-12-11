@@ -24,12 +24,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTaWduVXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/abdbl/Documents/GitHub/ASP.NET-CORE-EFCORE-UDEMY-PROJECT/Project3/AdvertisementApp/AdvertisementApp.Presentation/Views/AdvertisementApp/ApprovedList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2ZXJ0aXNlbWVudEFwcFxBcHByb3ZlZExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/abdbl/Documents/GitHub/ASP.NET-CORE-EFCORE-UDEMY-PROJECT/Project3/AdvertisementApp/AdvertisementApp.Presentation/Views/AdvertisementApp/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2ZXJ0aXNlbWVudEFwcFxMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/abdbl/Documents/GitHub/ASP.NET-CORE-EFCORE-UDEMY-PROJECT/Project3/AdvertisementApp/AdvertisementApp.Presentation/Views/AdvertisementApp/RejectedList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2ZXJ0aXNlbWVudEFwcFxSZWplY3RlZExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/abdbl/Documents/GitHub/ASP.NET-CORE-EFCORE-UDEMY-PROJECT/Project3/AdvertisementApp/AdvertisementApp.Presentation/Views/AdvertisementApp/Send.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2ZXJ0aXNlbWVudEFwcFxTZW5kLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdbl/Documents/GitHub/ASP.NET-CORE-EFCORE-UDEMY-PROJECT/Project3/AdvertisementApp/AdvertisementApp.Presentation/Views/Application/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwbGljYXRpb25cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdbl/Documents/GitHub/ASP.NET-CORE-EFCORE-UDEMY-PROJECT/Project3/AdvertisementApp/AdvertisementApp.Presentation/Views/Application/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwbGljYXRpb25cTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdbl/Documents/GitHub/ASP.NET-CORE-EFCORE-UDEMY-PROJECT/Project3/AdvertisementApp/AdvertisementApp.Presentation/Views/Application/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwbGljYXRpb25cVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/abdbl/Documents/GitHub/ASP.NET-CORE-EFCORE-UDEMY-PROJECT/Project3/AdvertisementApp/AdvertisementApp.Presentation/Views/Home/Advertisement.cshtml]

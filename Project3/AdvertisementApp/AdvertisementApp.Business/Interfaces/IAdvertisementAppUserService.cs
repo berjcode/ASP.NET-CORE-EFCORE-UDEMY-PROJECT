@@ -14,5 +14,7 @@ namespace AdvertisementApp.Business.Interfaces
         Task<IResponse<AdvertisementAppUserCreateDto>> CreateAsync(AdvertisementAppUserCreateDto dto);
         Task<List<AdvertisementAppUserListDto>> GetList(AdvertisementAppUserStatusType type);
         Task SetStatus(int advertisementAppUserId, AdvertisementAppUserStatusType type);
+
+        Task<IResponse> RemoveAsync(int id);
     }
 }
