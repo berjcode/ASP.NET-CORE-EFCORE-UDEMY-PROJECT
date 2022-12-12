@@ -1,0 +1,81 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AdvertisementApp.Presentation
+build_property.RootNamespace = AdvertisementApp.Presentation
+build_property.ProjectDir = C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\AdvertisementProject\AdvertisementApp\AdvertisementApp.Presentation\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\AdvertisementProject\AdvertisementApp\AdvertisementApp.Presentation
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/abdbl/Documents/GitHub/ASP.NET-CORE-EFCORE-UDEMY-PROJECT/AdvertisementProject/AdvertisementApp/AdvertisementApp.Presentation/Views/Account/SignIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTaWduSW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdbl/Documents/GitHub/ASP.NET-CORE-EFCORE-UDEMY-PROJECT/AdvertisementProject/AdvertisementApp/AdvertisementApp.Presentation/Views/Account/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTaWduVXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdbl/Documents/GitHub/ASP.NET-CORE-EFCORE-UDEMY-PROJECT/AdvertisementProject/AdvertisementApp/AdvertisementApp.Presentation/Views/AdvertisementApp/ApprovedList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2ZXJ0aXNlbWVudEFwcFxBcHByb3ZlZExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdbl/Documents/GitHub/ASP.NET-CORE-EFCORE-UDEMY-PROJECT/AdvertisementProject/AdvertisementApp/AdvertisementApp.Presentation/Views/AdvertisementApp/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2ZXJ0aXNlbWVudEFwcFxMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdbl/Documents/GitHub/ASP.NET-CORE-EFCORE-UDEMY-PROJECT/AdvertisementProject/AdvertisementApp/AdvertisementApp.Presentation/Views/AdvertisementApp/RejectedList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2ZXJ0aXNlbWVudEFwcFxSZWplY3RlZExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdbl/Documents/GitHub/ASP.NET-CORE-EFCORE-UDEMY-PROJECT/AdvertisementProject/AdvertisementApp/AdvertisementApp.Presentation/Views/AdvertisementApp/Send.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2ZXJ0aXNlbWVudEFwcFxTZW5kLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdbl/Documents/GitHub/ASP.NET-CORE-EFCORE-UDEMY-PROJECT/AdvertisementProject/AdvertisementApp/AdvertisementApp.Presentation/Views/Application/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwbGljYXRpb25cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdbl/Documents/GitHub/ASP.NET-CORE-EFCORE-UDEMY-PROJECT/AdvertisementProject/AdvertisementApp/AdvertisementApp.Presentation/Views/Application/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwbGljYXRpb25cTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdbl/Documents/GitHub/ASP.NET-CORE-EFCORE-UDEMY-PROJECT/AdvertisementProject/AdvertisementApp/AdvertisementApp.Presentation/Views/Application/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwbGljYXRpb25cVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdbl/Documents/GitHub/ASP.NET-CORE-EFCORE-UDEMY-PROJECT/AdvertisementProject/AdvertisementApp/AdvertisementApp.Presentation/Views/Home/Advertisement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZHZlcnRpc2VtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdbl/Documents/GitHub/ASP.NET-CORE-EFCORE-UDEMY-PROJECT/AdvertisementProject/AdvertisementApp/AdvertisementApp.Presentation/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdbl/Documents/GitHub/ASP.NET-CORE-EFCORE-UDEMY-PROJECT/AdvertisementProject/AdvertisementApp/AdvertisementApp.Presentation/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdbl/Documents/GitHub/ASP.NET-CORE-EFCORE-UDEMY-PROJECT/AdvertisementProject/AdvertisementApp/AdvertisementApp.Presentation/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdbl/Documents/GitHub/ASP.NET-CORE-EFCORE-UDEMY-PROJECT/AdvertisementProject/AdvertisementApp/AdvertisementApp.Presentation/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdbl/Documents/GitHub/ASP.NET-CORE-EFCORE-UDEMY-PROJECT/AdvertisementProject/AdvertisementApp/AdvertisementApp.Presentation/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdbl/Documents/GitHub/ASP.NET-CORE-EFCORE-UDEMY-PROJECT/AdvertisementProject/AdvertisementApp/AdvertisementApp.Presentation/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ge7c84qfzv
