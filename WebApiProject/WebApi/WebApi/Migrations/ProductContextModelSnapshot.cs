@@ -22,6 +22,35 @@ namespace WebApi.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("WebApi.Data.Category", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Categories");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Elektornik"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Yaşam"
+                        });
+                });
+
             modelBuilder.Entity("WebApi.Data.Product", b =>
                 {
                     b.Property<int>("Id")
@@ -29,6 +58,9 @@ namespace WebApi.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("CategoryId")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
@@ -50,13 +82,16 @@ namespace WebApi.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CategoryId");
+
                     b.ToTable("Products");
 
                     b.HasData(
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2022, 12, 9, 11, 50, 16, 918, DateTimeKind.Local).AddTicks(9496),
+                            CategoryId = 1,
+                            CreatedDate = new DateTime(2022, 12, 10, 12, 13, 43, 130, DateTimeKind.Local).AddTicks(8641),
                             ImagePath = "ab",
                             Name = "Bilgisayar",
                             Price = 15000m,
@@ -65,7 +100,8 @@ namespace WebApi.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2022, 12, 9, 11, 50, 16, 918, DateTimeKind.Local).AddTicks(9534),
+                            CategoryId = 1,
+                            CreatedDate = new DateTime(2022, 12, 10, 12, 13, 43, 130, DateTimeKind.Local).AddTicks(8651),
                             ImagePath = "ab",
                             Name = "MOUSE",
                             Price = 2000m,
@@ -74,12 +110,27 @@ namespace WebApi.Migrations
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2022, 12, 9, 11, 50, 16, 918, DateTimeKind.Local).AddTicks(9537),
+                            CategoryId = 1,
+                            CreatedDate = new DateTime(2022, 12, 10, 12, 13, 43, 130, DateTimeKind.Local).AddTicks(8653),
                             ImagePath = "ab",
                             Name = "TELEFON",
                             Price = 25000m,
                             Stock = 3100
                         });
+                });
+
+            modelBuilder.Entity("WebApi.Data.Product", b =>
+                {
+                    b.HasOne("WebApi.Data.Category", "Category")
+                        .WithMany("Products")
+                        .HasForeignKey("CategoryId");
+
+                    b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("WebApi.Data.Category", b =>
+                {
+                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }
