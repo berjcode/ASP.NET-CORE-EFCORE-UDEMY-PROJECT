@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "PawWa0iyzqkYFDNuxS6fbKFuEFJvW1Yy/limmCpif/+JRTye781yxVBKN6G0QK3CQUwCTChwpv/suN28fMb6Yg==",
+  "dgSpecHash": "dvhRd8ycbTDzOdl4hzZ09fGP3/G5ZuvwY8ZidvGH7vCPGgNOaIloAli8nddhgpezWd3xKE3pDYb7TC1+clAj7Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\abdbl\\Documents\\GitHub\\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\\WebApiProject\\WebApi\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\abdbl\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\abdbl\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\abdbl\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\abdbl\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.0\\microsoft.aspnetcore.authentication.jwtbearer.6.0.0.nupkg.sha512",
     "C:\\Users\\abdbl\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\6.0.7\\microsoft.aspnetcore.jsonpatch.6.0.7.nupkg.sha512",
     "C:\\Users\\abdbl\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\6.0.7\\microsoft.aspnetcore.mvc.newtonsoftjson.6.0.7.nupkg.sha512",
     "C:\\Users\\abdbl\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",

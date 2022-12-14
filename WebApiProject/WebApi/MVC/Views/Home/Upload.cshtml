@@ -1,0 +1,22 @@
+﻿@model MVC.ResponseModels.ProductResponseModel
+
+<h1> Yeni dOSYA Ekle</h1>
+
+<form asp-action="Upload" asp-controller="Home" method="post" enctype="multipart/form-data">
+
+    <label> Ürün Adı: </label>
+   
+  
+    <label> Dosya Seciniz </label>
+    <input type="file" name="file" />
+    <br />
+    <hr />
+   
+
+
+
+    <div>
+        <a asp-action="Index" asp-controller="Home"> Geri Dön </a>
+        <button type="submit"> Gönder</button>
+    </div>
+</form>

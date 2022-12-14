@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Cors;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using WebApi.Data;
 using WebApi.Interfaces;
@@ -17,6 +18,9 @@ namespace WebApi.Controllers
         {
             _repository= repository;
         }
+
+
+        [Authorize]
         [HttpGet]
 
         public async Task<IActionResult> GetAll()
@@ -40,7 +44,7 @@ namespace WebApi.Controllers
         {
 
             var addedProduct = await _repository.Create(product);
-            return Created(string.Empty, product);
+            return Created(string.Empty, addedProduct);
         }
 
 
@@ -72,7 +76,7 @@ namespace WebApi.Controllers
         }
 
         [HttpPost("upload")]
-        public async Task<IActionResult> Upload(IFormFile formFile)
+        public async Task<IActionResult> Upload([FromForm]IFormFile formFile)
         {
             var newName= Guid.NewGuid() + "."+Path.GetExtension(formFile.FileName);
             var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", newName);

@@ -22,35 +22,6 @@ namespace WebApi.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("WebApi.Data.Category", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Categories");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Name = "Elektornik"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Name = "Yaşam"
-                        });
-                });
-
             modelBuilder.Entity("WebApi.Data.Product", b =>
                 {
                     b.Property<int>("Id")
@@ -59,14 +30,10 @@ namespace WebApi.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("CategoryId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("CreatedDate")
+                    b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("ImagePath")
-                        .IsRequired()
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
@@ -74,7 +41,7 @@ namespace WebApi.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("Price")
+                    b.Property<decimal?>("Price")
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<int>("Stock")
@@ -82,16 +49,13 @@ namespace WebApi.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CategoryId");
-
                     b.ToTable("Products");
 
                     b.HasData(
                         new
                         {
                             Id = 1,
-                            CategoryId = 1,
-                            CreatedDate = new DateTime(2022, 12, 10, 12, 13, 43, 130, DateTimeKind.Local).AddTicks(8641),
+                            CreatedDate = new DateTime(2022, 12, 10, 20, 18, 48, 772, DateTimeKind.Local).AddTicks(6482),
                             ImagePath = "ab",
                             Name = "Bilgisayar",
                             Price = 15000m,
@@ -100,8 +64,7 @@ namespace WebApi.Migrations
                         new
                         {
                             Id = 2,
-                            CategoryId = 1,
-                            CreatedDate = new DateTime(2022, 12, 10, 12, 13, 43, 130, DateTimeKind.Local).AddTicks(8651),
+                            CreatedDate = new DateTime(2022, 12, 10, 20, 18, 48, 772, DateTimeKind.Local).AddTicks(6495),
                             ImagePath = "ab",
                             Name = "MOUSE",
                             Price = 2000m,
@@ -110,27 +73,12 @@ namespace WebApi.Migrations
                         new
                         {
                             Id = 3,
-                            CategoryId = 1,
-                            CreatedDate = new DateTime(2022, 12, 10, 12, 13, 43, 130, DateTimeKind.Local).AddTicks(8653),
+                            CreatedDate = new DateTime(2022, 12, 10, 20, 18, 48, 772, DateTimeKind.Local).AddTicks(6500),
                             ImagePath = "ab",
                             Name = "TELEFON",
                             Price = 25000m,
                             Stock = 3100
                         });
-                });
-
-            modelBuilder.Entity("WebApi.Data.Product", b =>
-                {
-                    b.HasOne("WebApi.Data.Category", "Category")
-                        .WithMany("Products")
-                        .HasForeignKey("CategoryId");
-
-                    b.Navigation("Category");
-                });
-
-            modelBuilder.Entity("WebApi.Data.Category", b =>
-                {
-                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }

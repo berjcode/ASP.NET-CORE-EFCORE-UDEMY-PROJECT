@@ -1,0 +1,38 @@
+﻿@model MVC.ResponseModels.ProductResponseModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+@{
+    if (TempData["errorMessage"] != null)
+    {
+        <p style="color:red">
+            @TempData["errorMessage"]?.ToString()
+        </p>
+    }
+}
+<h1> Ürün GÜncelleme</h1>
+
+<form asp-action="Update" asp-controller="Home" method="post">
+    <input type="hidden" asp-action="@Model.Id" />
+    <label> Ürün Adı: </label>
+    <input type="text" asp-for="@Model.Name" />
+    <br />
+    <hr />
+    <label> Ürün Fiyatı: </label>
+    <input asp-for="@Model.Price" />
+    <br />
+    <hr />
+    <label> Ürün Stoğu :  </label>
+    <input asp-for="@Model.Stock" />
+    <br />
+    <hr />
+
+
+
+
+    <div>
+        <a asp-action="Index" asp-controller="Home"> Geri Dön </a>
+        <button type="submit"> Güncelle</button>
+    </div>
+</form>

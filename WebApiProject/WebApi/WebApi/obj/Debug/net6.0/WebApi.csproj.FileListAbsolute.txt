@@ -90,3 +90,4 @@ C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\WebApiProject\
 C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\WebApiProject\WebApi\WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\WebApiProject\WebApi\WebApi\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\WebApiProject\WebApi\WebApi\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\WebApiProject\WebApi\WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
