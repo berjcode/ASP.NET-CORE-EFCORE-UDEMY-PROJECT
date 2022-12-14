@@ -28,6 +28,7 @@
       * MVC                                                                                                                                     
       * Unit Of Work
       * Dependency Injection
+      * CQRS (Command Query Responsibility)
        
   
                
