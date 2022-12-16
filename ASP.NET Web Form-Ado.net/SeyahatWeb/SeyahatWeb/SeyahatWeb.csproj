@@ -105,26 +105,207 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
-    <Content Include="Contact.aspx" />
+    <Content Include="Blog.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\Site.css" />
+    <Content Include="css\animate.min.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\flaticon.css" />
+    <Content Include="css\fontawesome-all.min.css" />
+    <Content Include="css\magnific-popup.css" />
+    <Content Include="css\nice-select.css" />
+    <Content Include="css\owl.carousel.min.css" />
+    <Content Include="css\responsive.css" />
+    <Content Include="css\slick.css" />
+    <Content Include="css\slicknav.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\themify-icons.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\fa-brands-400.svg" />
+    <Content Include="fonts\fa-regular-400.svg" />
+    <Content Include="fonts\fa-solid-900.svg" />
+    <Content Include="fonts\flaticon.html" />
+    <Content Include="fonts\Flaticon.svg" />
+    <Content Include="fonts\themify.svg" />
+    <Content Include="Galeri.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="AnaSayfa.Master" />
+    <Content Include="fonts\fa-brands-400.eot" />
+    <Content Include="fonts\fa-brands-400.ttf" />
+    <Content Include="fonts\fa-brands-400.woff" />
+    <Content Include="fonts\fa-brands-400.woff2" />
+    <Content Include="fonts\fa-regular-400.eot" />
+    <Content Include="fonts\fa-regular-400.ttf" />
+    <Content Include="fonts\fa-regular-400.woff" />
+    <Content Include="fonts\fa-regular-400.woff2" />
+    <Content Include="fonts\fa-solid-900.eot" />
+    <Content Include="fonts\fa-solid-900.ttf" />
+    <Content Include="fonts\fa-solid-900.woff" />
+    <Content Include="fonts\fa-solid-900.woff2" />
+    <Content Include="fonts\Flaticon.eot" />
+    <Content Include="fonts\Flaticon.ttf" />
+    <Content Include="fonts\Flaticon.woff" />
+    <Content Include="fonts\Flaticon.woff2" />
+    <Content Include="fonts\themify.eot" />
+    <Content Include="fonts\themify.ttf" />
+    <Content Include="fonts\themify.woff" />
+    <Content Include="fonts\_flaticon.scss" />
+    <Content Include="AltSayfaMaster.Master" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="iletisim.aspx" />
+    <Content Include="img\about\about_lft.png" />
+    <Content Include="img\about\about_right.png" />
+    <Content Include="img\about\pet_care.png" />
+    <Content Include="img\adapt_icon\1.png" />
+    <Content Include="img\adapt_icon\1.svg" />
+    <Content Include="img\adapt_icon\2.png" />
+    <Content Include="img\adapt_icon\3.png" />
+    <Content Include="img\banner\dog.png" />
+    <Content Include="img\banner\img.png" />
+    <Content Include="img\blog\author.png" />
+    <Content Include="img\blog\blog_1.png" />
+    <Content Include="img\blog\blog_2.png" />
+    <Content Include="img\blog\blog_3.png" />
+    <Content Include="img\blog\blog_4.png" />
+    <Content Include="img\blog\home-blog1.jpg" />
+    <Content Include="img\blog\home-blog2.jpg" />
+    <Content Include="img\blog\learn_about_bg.png" />
+    <Content Include="img\blog\single_blog_1.png" />
+    <Content Include="img\blog\single_blog_2.png" />
+    <Content Include="img\blog\single_blog_3.png" />
+    <Content Include="img\blog\single_blog_4.png" />
+    <Content Include="img\blog\single_blog_5.png" />
+    <Content Include="img\blog\slide_thumb_1.png" />
+    <Content Include="img\comment\comment_1.png" />
+    <Content Include="img\comment\comment_2.png" />
+    <Content Include="img\comment\comment_3.png" />
+    <Content Include="img\elements\a.jpg" />
+    <Content Include="img\elements\a2.jpg" />
+    <Content Include="img\elements\d.jpg" />
+    <Content Include="img\elements\disabled-check.png" />
+    <Content Include="img\elements\disabled-radio.png" />
+    <Content Include="img\elements\f1.jpg" />
+    <Content Include="img\elements\f2.jpg" />
+    <Content Include="img\elements\f3.jpg" />
+    <Content Include="img\elements\f4.jpg" />
+    <Content Include="img\elements\f5.jpg" />
+    <Content Include="img\elements\f6.jpg" />
+    <Content Include="img\elements\f7.jpg" />
+    <Content Include="img\elements\f8.jpg" />
+    <Content Include="img\elements\g1.jpg" />
+    <Content Include="img\elements\g2.jpg" />
+    <Content Include="img\elements\g3.jpg" />
+    <Content Include="img\elements\g4.jpg" />
+    <Content Include="img\elements\g5.jpg" />
+    <Content Include="img\elements\g6.jpg" />
+    <Content Include="img\elements\g7.jpg" />
+    <Content Include="img\elements\g8.jpg" />
+    <Content Include="img\elements\primary-check.png" />
+    <Content Include="img\elements\primary-radio.png" />
+    <Content Include="img\elements\success-check.png" />
+    <Content Include="img\elements\success-radio.png" />
+    <Content Include="img\favicon.ico" />
+    <Content Include="img\gallery\1.png" />
+    <Content Include="img\gallery\2.png" />
+    <Content Include="img\gallery\3.png" />
+    <Content Include="img\gallery\video.png" />
+    <Content Include="img\hero\about.jpg" />
+    <Content Include="img\hero\contact_hero.jpg" />
+    <Content Include="img\hero\h1_hero.jpg" />
+    <Content Include="img\hero\hero-_ineShape.png" />
+    <Content Include="img\icon\arrow-left.png" />
+    <Content Include="img\icon\arrow-right.png" />
+    <Content Include="img\icon\left-white.png" />
+    <Content Include="img\icon\right-white.png" />
+    <Content Include="img\icon\testimonial.png" />
+    <Content Include="img\logo\form-iocn.jpg" />
+    <Content Include="img\logo\loder.jpg" />
+    <Content Include="img\logo\logo.png" />
+    <Content Include="img\logo\logo2_footer.png" />
+    <Content Include="img\logo\select-items-icon.jpg" />
+    <Content Include="img\logo\testimonial.png" />
+    <Content Include="img\offers\1.png" />
+    <Content Include="img\offers\2.png" />
+    <Content Include="img\offers\3.png" />
+    <Content Include="img\our_blog\blog-img1.jpg" />
+    <Content Include="img\post\next.png" />
+    <Content Include="img\post\post_1.png" />
+    <Content Include="img\post\post_10.png" />
+    <Content Include="img\post\post_2.png" />
+    <Content Include="img\post\post_3.png" />
+    <Content Include="img\post\post_4.png" />
+    <Content Include="img\post\post_5.png" />
+    <Content Include="img\post\post_6.png" />
+    <Content Include="img\post\post_7.png" />
+    <Content Include="img\post\post_8.png" />
+    <Content Include="img\post\post_9.png" />
+    <Content Include="img\post\preview.png" />
+    <Content Include="img\prising\1.png" />
+    <Content Include="img\prising\10.png" />
+    <Content Include="img\prising\2.png" />
+    <Content Include="img\prising\3.png" />
+    <Content Include="img\prising\4.png" />
+    <Content Include="img\prising\5.png" />
+    <Content Include="img\prising\6.png" />
+    <Content Include="img\prising\7.png" />
+    <Content Include="img\prising\8.png" />
+    <Content Include="img\prising\9.png" />
+    <Content Include="img\service\1.png" />
+    <Content Include="img\service\2.png" />
+    <Content Include="img\service\3.png" />
+    <Content Include="img\service\footer_bg.jpg" />
+    <Content Include="img\service\services1.jpg" />
+    <Content Include="img\service\services2.jpg" />
+    <Content Include="img\service\services3.jpg" />
+    <Content Include="img\service\services4.jpg" />
+    <Content Include="img\service\services5.jpg" />
+    <Content Include="img\service\services6.jpg" />
+    <Content Include="img\service\services7.jpg" />
+    <Content Include="img\service\services8.jpg" />
+    <Content Include="img\service\services9.jpg" />
+    <Content Include="img\service\service_icon_1.png" />
+    <Content Include="img\service\service_icon_2.png" />
+    <Content Include="img\service\service_icon_3.png" />
+    <Content Include="img\service\service_icon_bg_1.png" />
+    <Content Include="img\service\support-img.jpg" />
+    <Content Include="img\service\video-bg.jpg" />
+    <Content Include="img\team\1.png" />
+    <Content Include="img\team\2.png" />
+    <Content Include="img\team\3.png" />
+    <Content Include="img\testmonial\1.png" />
+    <Content Include="img\testmonial\Homepage_testi.png" />
+    <Content Include="img\testmonial\testimonial_bg.jpg" />
+    <Content Include="js\animated.headline.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\contact.js" />
+    <Content Include="js\jquery.ajaxchimp.min.js" />
+    <Content Include="js\jquery.form.js" />
+    <Content Include="js\jquery.magnific-popup.js" />
+    <Content Include="js\jquery.nice-select.min.js" />
+    <Content Include="js\jquery.paroller.min.js" />
+    <Content Include="js\jquery.scrollUp.min.js" />
+    <Content Include="js\jquery.slicknav.min.js" />
+    <Content Include="js\jquery.sticky.js" />
+    <Content Include="js\jquery.validate.min.js" />
+    <Content Include="js\mail-script.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\one-page-nav-min.js" />
+    <Content Include="js\owl.carousel.min.js" />
+    <Content Include="js\plugins.js" />
+    <Content Include="js\popper.min.js" />
+    <Content Include="js\slick.min.js" />
+    <Content Include="js\vendor\jquery-1.12.4.min.js" />
+    <Content Include="js\vendor\modernizr-3.5.0.min.js" />
+    <Content Include="js\wow.min.js" />
+    <Content Include="Kurumsal.aspx" />
+    <Content Include="Paketler.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -153,28 +334,57 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
-    <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
-    <Content Include="Site.Mobile.Master" />
+    <Content Include="scss\style.scss" />
+    <Content Include="scss\_blog.scss" />
+    <Content Include="scss\_blog_page.scss" />
+    <Content Include="scss\_bradcam.scss" />
+    <Content Include="scss\_color.scss" />
+    <Content Include="scss\_common.scss" />
+    <Content Include="scss\_contact.scss" />
+    <Content Include="scss\_elements.scss" />
+    <Content Include="scss\_extend.scss" />
+    <Content Include="scss\_favourite-place.scss" />
+    <Content Include="scss\_footer.scss" />
+    <Content Include="scss\_h1-hero.scss" />
+    <Content Include="scss\_headerMenu.scss" />
+    <Content Include="scss\_mixins.scss" />
+    <Content Include="scss\_overlay.scss" />
+    <Content Include="scss\_pagination.scss" />
+    <Content Include="scss\_recent.scss" />
+    <Content Include="scss\_services.scss" />
+    <Content Include="scss\_services_section.scss" />
+    <Content Include="scss\_support-company.scss" />
+    <Content Include="scss\_team.scss" />
+    <Content Include="scss\_testimonial.scss" />
+    <Content Include="scss\_variables.scss" />
+    <Content Include="scss\_video-area.scss" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AltSayfaMaster.Master.cs">
+      <DependentUpon>AltSayfaMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AltSayfaMaster.Master.designer.cs">
+      <DependentUpon>AltSayfaMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AnaSayfa.Master.cs">
+      <DependentUpon>AnaSayfa.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AnaSayfa.Master.designer.cs">
+      <DependentUpon>AnaSayfa.Master</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-    </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
+    <Compile Include="Blog.aspx.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
+    <Compile Include="Blog.aspx.designer.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -183,24 +393,38 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Galeri.aspx.cs">
+      <DependentUpon>Galeri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Galeri.aspx.designer.cs">
+      <DependentUpon>Galeri.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="iletisim.aspx.cs">
+      <DependentUpon>iletisim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iletisim.aspx.designer.cs">
+      <DependentUpon>iletisim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kurumsal.aspx.cs">
+      <DependentUpon>Kurumsal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kurumsal.aspx.designer.cs">
+      <DependentUpon>Kurumsal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paketler.aspx.cs">
+      <DependentUpon>Paketler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paketler.aspx.designer.cs">
+      <DependentUpon>Paketler.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Site.Master.cs">
-      <DependentUpon>Site.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Site.Master.designer.cs">
-      <DependentUpon>Site.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Site.Mobile.Master.cs">
-      <DependentUpon>Site.Mobile.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Site.Mobile.Master.designer.cs">
-      <DependentUpon>Site.Mobile.Master</DependentUpon>
-    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -211,6 +435,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Yonetim\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
