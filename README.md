@@ -2,6 +2,7 @@
 # Projects 
 * Bank WebApp
 * ToDo App
+* Advertisement App
 
 
 
@@ -28,6 +29,7 @@
       * MVC                                                                                                                                     
       * Unit Of Work
       * Dependency Injection
+      * CQRS (Command Query Responsibility)
        
   
                
