@@ -1,0 +1,176 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="SeyahatWeb.Yonetim.Admin" %>
+
+
+
+   
+
+           
+
+
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Purple Admin</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="vendors/iconfonts/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- inject:css -->
+ 
+    <link href="css/style.css" rel="stylesheet" />
+  <!-- endinject -->
+  <link rel="shortcut icon" href="images/favicon.png" />
+     <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo" href="index.html"><img src="images/logo.svg" alt="logo"/></a>
+        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo-mini.svg" alt="logo"/></a>
+      </div>
+
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item nav-profile">
+            <a href="#" class="nav-link">
+              <div class="nav-profile-image">
+                <img src="images/faces/face1.jpg" alt="profile">
+                <span class="login-status online"></span> <!--change to offline or busy as needed-->              
+              </div>
+              <div class="nav-profile-text d-flex flex-column">
+                <span class="font-weight-bold mb-2">Abdullah Balıkçı </span>
+                <span class="text-secondary text-small">Developer</span>
+              </div>
+              <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Default.aspx">
+              <span class="menu-title">Anasayfa</span>
+              <i class="mdi mdi-home menu-icon"></i>
+            </a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="Kurumsal.aspx">
+              <span class="menu-title">Kurumsal</span>
+              <i class="mdi mdi-contacts menu-icon"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="PaketEkle.aspx" >
+              <span class="menu-title">Paket Ekle</span>
+         
+              
+            </a>
+           
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="PaketDuzenleSil.aspx">
+              <span class="menu-title">Paket Düzenle</span>
+              <i class="mdi mdi-contacts menu-icon"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Blog.aspx">
+              <span class="menu-title">Blog Ekle</span>
+              <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+            </a>
+          </li>
+             <li class="nav-item">
+            <a class="nav-link" href="BlogDuzenle.aspx">
+              <span class="menu-title">Blog Düzenle</span>
+              <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="BlogKategori.aspx">
+              <span class="menu-title">Blog Kategori Ekle</span>
+              <i class="mdi mdi-chart-bar menu-icon"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Galeri.aspx">
+              <span class="menu-title">Galeri</span>
+              <i class="mdi mdi-table-large menu-icon"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="Ayarlar.aspx" >
+              <span class="menu-title">Ayarlar</span>
+              
+              <i class="mdi mdi-medical-bag menu-icon"></i>
+            </a>
+
+          </li>
+      
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">        
+        <div class="content-wrapper">
+          <div class="page-header">
+              <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                 
+          
+                </asp:ContentPlaceHolder>
+              </div>
+            
+          
+
+          
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                
+          
+              
+         
+              </asp:ContentPlaceHolder>
+       
+           
+            </div>
+         
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2017 <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap Dash</a>. All rights reserved.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="mdi mdi-heart text-danger"></i></span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="vendors/js/vendor.bundle.base.js"></script>
+  <script src="vendors/js/vendor.bundle.addons.js"></script>
+  <!-- endinject -->
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/misc.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="js/file-upload.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>
+
+            
+ 
