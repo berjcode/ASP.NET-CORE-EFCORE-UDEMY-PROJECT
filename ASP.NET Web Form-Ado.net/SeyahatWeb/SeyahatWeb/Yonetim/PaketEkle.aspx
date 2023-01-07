@@ -33,14 +33,15 @@
                     <div class="form-group">
                       <label>Tur Resim</label>
                         <asp:FileUpload ID="FileUpload1" runat="server" CssClass="file-control file-upload-info" />
+                        <asp:Button ID="Button2" runat="server" Text="Resim Yükle" OnClick="Button2_Click1" />
                     </div>
                    
                     <div class="form-group">
-                      <label for="exampleTextarea1">Tur Detayı</label>
+                        <asp:Label ID="lblResim" runat="server" Text="Label"></asp:Label>
                       <asp:TextBox ID="txtDetay" runat="server" TextMode="MultiLine"  height="80px" CssClass="form-control" placeholder="Tur Detay"></asp:TextBox>
                     </div>
                    
-                      <asp:Button ID="Button1" runat="server" Text="Kaydet" CssClass="btn btn-gradient-primary mr-2" />
+                      <asp:Button ID="Button1" runat="server" Text="Kaydet" CssClass="btn btn-gradient-primary mr-2" OnClick="Button1_Click" />
                   </form>
                 </div>
               </div>

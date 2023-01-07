@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cGkclKSJ4zLU3C+74xeFoM2epw35dphCqjRESn/kK91jcSxQMZqhLFcgDxA9sZaxdPJR8ZTYT9kA77g1sZMr6A==",
+  "dgSpecHash": "6HE8ToH64enPjCclILcMr91rCarAvQZc9/c/rP1rLH2M/lWHKq5MKAicpYwL2QsEyCeU1S96Z8teL+1JR0hvfA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\abdbl\\Documents\\GitHub\\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\\Project2\\UI\\UI.csproj",
+  "projectFilePath": "C:\\Users\\abdbl\\Documents\\GitHub\\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\\ToDoAppProject\\UI\\UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\abdbl\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\abdbl\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",

@@ -10,3 +10,15 @@ C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\Project2\Dtos\
 C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\Project2\Dtos\obj\Debug\net6.0\refint\Dtos.dll
 C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\Project2\Dtos\obj\Debug\net6.0\Dtos.pdb
 C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\Project2\Dtos\obj\Debug\net6.0\ref\Dtos.dll
+C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\ToDoAppProject\Dtos\bin\Debug\net6.0\Dtos.deps.json
+C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\ToDoAppProject\Dtos\bin\Debug\net6.0\Dtos.dll
+C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\ToDoAppProject\Dtos\bin\Debug\net6.0\Dtos.pdb
+C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\ToDoAppProject\Dtos\obj\Debug\net6.0\Dtos.csproj.AssemblyReference.cache
+C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\ToDoAppProject\Dtos\obj\Debug\net6.0\Dtos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\ToDoAppProject\Dtos\obj\Debug\net6.0\Dtos.AssemblyInfoInputs.cache
+C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\ToDoAppProject\Dtos\obj\Debug\net6.0\Dtos.AssemblyInfo.cs
+C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\ToDoAppProject\Dtos\obj\Debug\net6.0\Dtos.csproj.CoreCompileInputs.cache
+C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\ToDoAppProject\Dtos\obj\Debug\net6.0\Dtos.dll
+C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\ToDoAppProject\Dtos\obj\Debug\net6.0\refint\Dtos.dll
+C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\ToDoAppProject\Dtos\obj\Debug\net6.0\Dtos.pdb
+C:\Users\abdbl\Documents\GitHub\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\ToDoAppProject\Dtos\obj\Debug\net6.0\ref\Dtos.dll

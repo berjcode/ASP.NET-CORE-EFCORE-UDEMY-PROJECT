@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/inhWuh/ETKePJK4VjJdhj/rvCXwBkhkGpoZ92e8RcMIOmcbPQlIg+OIapha+tZvQrsukMG8a4FUrAFR2KwrnA==",
+  "dgSpecHash": "ORht+Auzh9LFc4duBonmv9yGQ5D9KKCwE8R6VMp2C5AUoOdS335pFaXuXdnTaAjsnLqF3M40xDmOAEVdc3R27A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\abdbl\\Documents\\GitHub\\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\\Project2\\Dtos\\Dtos.csproj",
+  "projectFilePath": "C:\\Users\\abdbl\\Documents\\GitHub\\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\\ToDoAppProject\\Dtos\\Dtos.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jM5BjCewWOHrEdYnS/AKHlTzCW8dBvJU+ekUBlQOm1RKM6gxeVEKj4K89IX+6P5lgQyANd9kfukPFoKEePDo6A==",
+  "dgSpecHash": "t4lSJ59xyHEkSNoSQaUfglywKclrm3yosXuKEpn2ZfXtzVUPfugPaW2P68jYw7F+/gJmAyHb05SJQQbxDMTshw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\abdbl\\Documents\\GitHub\\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\\Project2\\DataAcces\\DataAcces.csproj",
+  "projectFilePath": "C:\\Users\\abdbl\\Documents\\GitHub\\ASP.NET-CORE-EFCORE-UDEMY-PROJECT\\ToDoAppProject\\DataAcces\\DataAcces.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\abdbl\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\abdbl\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
